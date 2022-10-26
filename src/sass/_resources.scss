@@ -1,0 +1,26 @@
+$white-color: #ffffff;
+$primary-color: #0B0D17;
+$secondary-color: #D0D6F9;
+$bg-image-l: '/assets/img/background-home-desktop.jpg';
+$font-primary: 'Barlow Condensed', sans-serif;
+$font-heading: 'Bellefair', sans-serif;
+$font-body: 'Barlow', sans-serif;
+
+@mixin heading($font-family, $font-size){
+  font-family: $font-family;
+  font-size: $font-size;
+  text-transform: uppercase;
+}
+@mixin sub-heading($font-family, $font-size, $letter-spacing, $color){
+  font-family: $font-family;
+  font-size: $font-size;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  font-weight: 400;
+  color: $color;
+}
+@mixin body-text($font-family, $font-size, $color){
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+}

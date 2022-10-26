@@ -1,39 +1,14 @@
+@import 'resources';
 :root{
   font-size: 62.5%;
 }
-$white-color: #ffffff;
-$primary-color: #0B0D17;
-$secondary-color: #D0D6F9;
-$bg-image-l: '/assets/img/background-home-desktop.jpg';
-$font-heading: 'Bellefair', sans-serif;
-$font-heading-5: 'Barlow Condensed', sans-serif;
-$font-body: 'Barlow', sans-serif;
 *{
-  // font-family: sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: $white-color;
   
-}
-
-@mixin heading($font-family, $font-size){
-  font-family: $font-family;
-  font-size: $font-size;
-  text-transform: uppercase;
-}
-@mixin sub-heading($font-family, $font-size, $letter-spacing, $color){
-  font-family: $font-family;
-  font-size: $font-size;
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing;
-  font-weight: 400;
-  color: $color;
-}
-@mixin body-text($font-family, $font-size, $color){
-  font-family: $font-family;
-  font-size: $font-size;
-  color: $color;
 }
 main{
   #title{
@@ -41,7 +16,7 @@ main{
     line-height: 10rem;
   }
   span{
-    @include sub-heading($font-heading-5, 2rem, 2.7px, $secondary-color);
+    @include sub-heading($font-primary, 2rem, 2.7px, $secondary-color);
   }
   p{
     @include body-text($font-body, 1.5rem, $secondary-color);
@@ -87,9 +62,10 @@ main{
   width: 15rem;
   border: none;
   border-radius: 50%;
-  transition: all .3s ease-in-out;
+  transition: outline-width .4s ease-in-out;
+  outline: solid 0 rgba(255, 255, 255, 0.200);
   &:hover{
-    outline: solid 4.5rem rgba(255, 255, 255, 0.200);
+    outline-width: 4.5rem
   }
 }
 #btn-explore a {
