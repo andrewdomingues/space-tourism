@@ -1,0 +1,42 @@
+@import 'resources';
+.hide{
+  display: none;
+}
+.menu-select{
+  border-right: solid .4rem $white-color;
+}
+#ham-menu{
+  position: relative;
+  z-index: 2;
+}
+#menu{
+  @include menu-blur;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 65%;
+  color: black;
+  padding: 9rem 0 3.2rem 3.2rem;
+  ul{
+    margin-top: 4rem;
+    li{
+      list-style: none;
+      margin-bottom: 1rem;
+      a{
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 4rem;
+        grid-template-areas: 'a b';
+        align-content: start;
+      }
+    }
+    span, a{
+      @include font-menu($font-primary, 2.6rem, .27rem, $white-color);
+    }
+    a{
+      font-weight: 400
+    }
+  }
+}
