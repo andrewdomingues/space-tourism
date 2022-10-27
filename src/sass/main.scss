@@ -59,7 +59,7 @@ main{
   width: 15rem;
   border: none;
   border-radius: 50%;
-  transition: outline-width .4s ease-in-out;
+  transition: outline-width .5s ease-in-out;
   outline: solid 0 rgba(255, 255, 255, 0.200);
   &:hover{
     outline-width: 4.5rem

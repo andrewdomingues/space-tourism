@@ -37,3 +37,19 @@ $font-body: 'Barlow', sans-serif;
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(4rem);
 }
+@keyframes menu-open-animation {
+  from{
+    right: -65%;
+  }
+  to{
+    right: 0;
+  }
+}
+@keyframes menu-close-animation {
+  from{
+    right: 0;
+  }
+  to{
+    right: -65%;
+  }
+}
