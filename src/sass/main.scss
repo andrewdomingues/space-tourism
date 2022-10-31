@@ -1,10 +1,10 @@
 @import "resources";
 @import "ham-menu";
+
 :root {
   font-size: 62.5%;
 }
 * {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +15,7 @@ main {
     @include heading($font-heading, 8rem);
     line-height: 10rem;
   }
-  span {
+  h5 {
     @include sub-heading($font-primary, 2rem, 2.7px, $secondary-color);
   }
   p {
@@ -25,7 +25,7 @@ main {
 }
 body {
   background-color: $primary-color;
-  background-image: url(/assets/img/bg-home-s.jpg);
+  background-image: url(/assets/home/bg-home-s.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,12 +70,12 @@ main {
 }
 
 @media (min-width: 500px) {
-  body{
-    background-image: url(/assets/img/bg-home-m.jpg);
+  body {
+    background-image: url(/assets/home/bg-home-m.jpg);
   }
 }
-@media(min-width: 1000px){
-  body{
-    background-image: url(/assets/img/bg-home-l.jpg);
+@media (min-width: 1000px) {
+  body {
+    background-image: url(/assets/home/bg-home-l.jpg);
   }
 }

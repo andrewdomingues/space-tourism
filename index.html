@@ -9,10 +9,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/img/favicon-32x32.png"
+      href="./assets/home/favicon-32x32.png"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/main.css" />
@@ -21,17 +21,19 @@
   <body>
     <header>
       <div id="logo">
-        <img src="/assets/img/logo.svg" alt="Logo tourism website" />
+        <a href="/"
+          ><img src="/assets/home/logo.svg" alt="Logo tourism website"
+        /></a>
       </div>
       <div id="ham-menu">
         <img
-          src="/assets/img/icon-hamburger.svg"
+          src="/assets/home/icon-hamburger.svg"
           alt="Hamburger menu"
           id="ham-menu-icon-open"
           class=""
         />
         <img
-          src="assets/img/icon-close.svg"
+          src="/assets/home/icon-close.svg"
           alt="Hamburger menu close"
           id="ham-menu-icon-close"
           class="hide"
@@ -40,10 +42,12 @@
       <nav id="menu" class="">
         <ul>
           <li>
-            <a class="menu-item menu-select" href="#"><span>00</span> Home</a>
+            <a class="menu-item menu-select" href="/"><span>00</span> Home</a>
           </li>
           <li>
-            <a class="menu-item" href="#"><span>01</span> Destination</a>
+            <a class="menu-item" href="/pages/destination-moon.html"
+              ><span>01</span> Destination</a
+            >
           </li>
           <li>
             <a class="menu-item" href="#"><span>02</span> Crew</a>
@@ -55,7 +59,7 @@
       </nav>
     </header>
     <main>
-      <span> So, you want to travel to </span>
+      <h5>So, you want to travel to</h5>
       <h1 id="title">Space</h1>
       <p id="paragraph">
         Let's face it; if you want to go to space, you might as well genuinely
@@ -63,7 +67,7 @@
         back, and relax because we'll give you a truly out of this world
         experience!
       </p>
-      <button id="btn-explore"><a href="#">Explore</a></button>
+      <button id="btn-explore"><a href="/pages/destination-moon.html">Explore</a></button>
     </main>
 
     <script src="/src/js/main.js"></script>

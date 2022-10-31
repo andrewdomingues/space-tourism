@@ -1,0 +1,80 @@
+@import 'resources';
+@import 'main';
+
+h5 span {
+  font-weight: bold;
+  opacity: 25%;
+}
+
+body{
+  background-image: url(/assets/destination/background-destination-mobile.jpg);
+  #planet-photo{
+    margin-top: 3.2rem;
+    margin-bottom: 2.6rem;
+    width: 20rem;
+  }
+}
+h1#title{
+  font-size: 5.6rem;
+  line-height: normal;
+}
+#paragraph{
+  border-bottom: solid 1px $line-break-color;
+  padding: 0 0 3.2rem;
+  margin: 0 2.4rem;
+}
+.tab-menu{
+  display: flex;
+  gap: 2.6rem;
+  .tab-item{
+    @include sub-heading($primary-color, 1.5rem, .24rem, $secondary-color);
+    text-decoration: none;
+    padding: .8rem 0;
+  }
+  .tab-item-select{
+    border-bottom: solid 4px $white-color;
+  }
+}
+
+#sub-headings{
+  margin: 3.2rem 0 5.8rem 0;
+  .sub-heading-item{
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+}
+.sub1{
+  @include sub-heading($font-primary, 1.4rem, .24rem, $secondary-color);
+  margin-bottom: 1.2rem;
+}
+.sub2{
+  @include sub-heading($font-heading, 2.8rem, normal, $white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+  }
+}
