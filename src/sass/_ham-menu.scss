@@ -1,24 +1,24 @@
-@import 'resources';
-.hide{
+@import "resources";
+.hide {
   display: none;
 }
-#menu.menu-open{
+#menu.menu-open {
   right: 0;
-  animation: menu-open-animation .5s;
+  animation: menu-open-animation 0.5s;
 }
-#menu.menu-close{
+#menu.menu-close {
   right: -65%;
-  animation: menu-close-animation .5s;
+  animation: menu-close-animation 0.5s;
 }
-a.menu-select{
+a.menu-select {
   border-color: $white-color;
 }
-#ham-menu{
+#ham-menu {
   position: relative;
   z-index: 2;
-  cursor: pointer
+  cursor: pointer;
 }
-#menu{
+#menu {
   @include menu-blur;
   position: fixed;
   z-index: 1;
@@ -28,27 +28,28 @@ a.menu-select{
   width: 65%;
   color: black;
   padding: 9rem 0 3.2rem 3.2rem;
-  ul{
+  ul {
     margin-top: 4rem;
-    li{
+    li {
       list-style: none;
       margin-bottom: 1rem;
-      a{
+      a {
         padding: 0.5rem;
         display: grid;
         grid-template-columns: 4rem;
-        grid-template-areas: 'a b';
+        grid-template-areas: "a b";
         align-content: start;
       }
     }
-    span, a{
-      @include font-menu($font-primary, 2.6rem, .27rem, $white-color);
+    span,
+    a {
+      @include font-menu($font-primary, 2.6rem, 0.27rem, $white-color);
     }
-    a{
-      font-weight: 400
+    a {
+      font-weight: 400;
     }
   }
 }
-.menu-item{
-  border-right: solid .4rem transparent;
+.menu-item {
+  border-right: solid 0.7rem transparent;
 }

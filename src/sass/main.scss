@@ -1,57 +1,56 @@
-@import 'resources';
-@import 'ham-menu';
-:root{
+@import "resources";
+@import "ham-menu";
+:root {
   font-size: 62.5%;
 }
-*{
+* {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: $white-color;
-  
 }
-main{
-  #title{
+main {
+  #title {
     @include heading($font-heading, 8rem);
     line-height: 10rem;
   }
-  span{
+  span {
     @include sub-heading($font-primary, 2rem, 2.7px, $secondary-color);
   }
-  p{
+  p {
     @include body-text($font-body, 1.5rem, $secondary-color);
     line-height: 2.5rem;
   }
 }
-body{
+body {
   background-color: $primary-color;
-  background-image: url($bg-image-l);
+  background-image: url(/assets/img/bg-home-s.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
   // background: #222 url($bg-image-l) center cover no-repeat;
 }
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
-  p{
+  p {
     text-align: center;
     padding: 0 2.4rem;
   }
 }
-#btn-explore{
+#btn-explore {
   margin-top: 80px;
   background-color: $white-color;
   cursor: pointer;
@@ -59,13 +58,24 @@ main{
   width: 15rem;
   border: none;
   border-radius: 50%;
-  transition: outline-width .5s ease-in-out;
-  outline: solid 0 rgba(255, 255, 255, 0.200);
-  &:hover{
-    outline-width: 4.5rem
+  transition: outline-width 0.5s ease-in-out;
+  outline: solid 0 rgba(255, 255, 255, 0.2);
+  &:hover {
+    outline-width: 4.5rem;
   }
 }
 #btn-explore a {
   @include body-text($font-heading, 3.2rem, $primary-color);
   text-decoration: none;
+}
+
+@media (min-width: 500px) {
+  body{
+    background-image: url(/assets/img/bg-home-m.jpg);
+  }
+}
+@media(min-width: 1000px){
+  body{
+    background-image: url(/assets/img/bg-home-l.jpg);
+  }
 }
