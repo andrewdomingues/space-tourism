@@ -28,9 +28,7 @@ body {
   background-image: url(/assets/home/bg-home-s.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   background-attachment: fixed;
-  // background: #222 url($bg-image-l) center cover no-repeat;
 }
 header {
   display: flex;
@@ -51,24 +49,26 @@ main {
   }
 }
 #btn-explore {
-  margin-top: 80px;
+  @include sub-heading($font-heading, 2rem, .125rem, $primary-color);
+  margin-top: 7rem;
+  margin-bottom: 6rem;
   background-color: $white-color;
   cursor: pointer;
   height: 15rem;
   width: 15rem;
   border: none;
   border-radius: 50%;
-  transition: outline-width 0.5s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: solid 0 rgba(255, 255, 255, 0.2);
+  transition: outline-width 0.2s ease-in-out;
   &:hover {
     outline-width: 4.5rem;
   }
 }
-#btn-explore a {
-  @include body-text($font-heading, 3.2rem, $primary-color);
-  text-decoration: none;
-}
-
 @media (min-width: 500px) {
   body {
     background-image: url(/assets/home/bg-home-m.jpg);

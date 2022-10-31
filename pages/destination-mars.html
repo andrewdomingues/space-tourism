@@ -7,13 +7,13 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/home/favicon-32x32.png"
+      href="/assets/home/favicon-32x32.png"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/destination.css" />
     <title>Space tourism website</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
           class=""
         />
         <img
-          src="assets/img/icon-close.svg"
+          src="/assets/home/icon-close.svg"
           alt="Hamburger menu close"
           id="ham-menu-icon-close"
           class="hide"
@@ -40,10 +40,12 @@
       <nav id="menu" class="">
         <ul>
           <li>
-            <a class="menu-item menu-select" href="#"><span>00</span> Home</a>
+            <a class="menu-item" href="/"><span>00</span> Home</a>
           </li>
           <li>
-            <a class="menu-item" href="#"><span>01</span> Destination</a>
+            <a class="menu-item menu-select" href="#"
+              ><span>01</span> Destination</a
+            >
           </li>
           <li>
             <a class="menu-item" href="#"><span>02</span> Crew</a>
@@ -56,10 +58,34 @@
     </header>
     <main>
       <h5><span>01</span> Pick your destination</h5>
-      Moon Mars Europa Titan Mars Don't forget to pack your hiking boots. You'll
-      need them to tackle Olympus Mons, the tallest planetary mountain in our
-      solar system. It's two and a half times the size of Everest! Avg. distance
-      225 mil. km Est. travel time 9 months
+      <img
+        src="/assets/destination/image-mars.png"
+        id="planet-photo"
+        alt="Moon photo"
+      />
+      <div class="tab-menu">
+        <a href="/pages/destination-moon.html" class="tab-item"> Moon </a>
+        <a href="#" class="tab-item tab-item-select"> Mars </a>
+        <a href="/pages/destination-europa.html" class="tab-item"> Europa </a>
+        <a href="/pages/destination-titan.html" class="tab-item"> Titan </a>
+      </div>
+      <h1 id="title">Mars</h1>
+      <p id="paragraph">
+        Moon Mars Europa Titan Mars Don't forget to pack your hiking boots. You'll
+        need them to tackle Olympus Mons, the tallest planetary mountain in our
+        solar system. It's two and a half times the size of Everest!
+      </p>
+      <div id="sub-headings">
+        <div class="sub-heading-item">
+          <div class="sub1">Avg. distance</div>
+          <div class="sub2">225 mil. km</div>
+        </div>
+        <div class="sub-heading-item">
+          <div class="sub1">Est. travel time</div>
+          <div class="sub2">9 months</div>
+        </div>
+      </div>
     </main>
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
