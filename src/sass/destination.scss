@@ -1,11 +1,5 @@
 @import 'resources';
 @import 'main';
-
-h5 span {
-  font-weight: bold;
-  opacity: 25%;
-}
-
 body{
   background-image: url(/assets/destination/background-destination-mobile.jpg);
   #planet-photo{
@@ -19,7 +13,7 @@ h1#title{
   line-height: normal;
 }
 #paragraph{
-  border-bottom: solid 1px $line-break-color;
+  @include border-bottom;
   padding: 0 0 3.2rem;
   margin: 0 2.4rem;
 }
@@ -50,23 +44,6 @@ h1#title{
 .sub2{
   @include sub-heading($font-heading, 2.8rem, normal, $white-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 500px) {
   body {

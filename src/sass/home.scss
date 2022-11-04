@@ -1,0 +1,40 @@
+@import 'resources';
+@import 'main';
+
+main{
+  h5{
+    color: $secondary-color;
+  }
+}
+
+#btn-explore {
+  @include sub-heading($font-heading, 2rem, 0.125rem, $primary-color);
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+  background-color: $white-color;
+  cursor: pointer;
+  height: 15rem;
+  width: 15rem;
+  border: none;
+  border-radius: 50%;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: solid 0 rgba(255, 255, 255, 0.2);
+  transition: outline-width 0.2s ease-in-out;
+  &:hover {
+    outline-width: 4.5rem;
+  }
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url($bg-home-m);
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-image: url($bg-home-l);
+  }
+}

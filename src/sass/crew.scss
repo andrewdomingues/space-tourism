@@ -1,0 +1,57 @@
+@import "resources";
+@import "main";
+
+body {
+  background-image: url($bg-crew-s);
+}
+main {
+  .img-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    @include border-bottom;
+  }
+  #crew-photo {
+    width: clamp(15rem, 10rem + 50vw, 17.7rem);
+  }
+  #name{
+    @include heading($font-heading, 2.4rem);
+    font-weight: 400;
+  }
+}
+#role{
+  opacity: 50%;
+}
+
+
+.slider{
+  // background-color: red;
+  width: 88px;
+  height: 10px;
+  display: flex;
+  .page-slider{
+    width: 1rem;
+    height: 1rem;
+    background-color: $gray-color;
+    margin: 0 .6rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .select-slider{
+    background-color: $white-color;
+  }
+}
+
+
+
+
+@media (min-width: 500px) {
+  body {
+    background-image: url($bg-crew-m);
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-image: url($bg-crew-l);
+  }
+}

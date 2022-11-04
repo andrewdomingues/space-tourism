@@ -16,16 +16,20 @@ main {
     line-height: 10rem;
   }
   h5 {
-    @include sub-heading($font-primary, 2rem, 2.7px, $secondary-color);
+    @include sub-heading($font-primary, 2rem, 2.7px, $white-color);
   }
   p {
     @include body-text($font-body, 1.5rem, $secondary-color);
     line-height: 2.5rem;
   }
 }
+h5 span {
+  opacity: 25%;
+}
+
 body {
   background-color: $primary-color;
-  background-image: url(/assets/home/bg-home-s.jpg);
+  background-image: url($bg-home-s);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,36 +50,5 @@ main {
   p {
     text-align: center;
     padding: 0 2.4rem;
-  }
-}
-#btn-explore {
-  @include sub-heading($font-heading, 2rem, .125rem, $primary-color);
-  margin-top: 7rem;
-  margin-bottom: 6rem;
-  background-color: $white-color;
-  cursor: pointer;
-  height: 15rem;
-  width: 15rem;
-  border: none;
-  border-radius: 50%;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: solid 0 rgba(255, 255, 255, 0.2);
-  transition: outline-width 0.2s ease-in-out;
-  &:hover {
-    outline-width: 4.5rem;
-  }
-}
-@media (min-width: 500px) {
-  body {
-    background-image: url(/assets/home/bg-home-m.jpg);
-  }
-}
-@media (min-width: 1000px) {
-  body {
-    background-image: url(/assets/home/bg-home-l.jpg);
   }
 }
