@@ -1,0 +1,63 @@
+@import 'main';
+@import 'resources';
+@import 'ham-menu';
+
+body{
+  background-image: url($bg-tech-s);
+}
+main{
+  #tech-img{
+    width: 100vw;
+    max-width: 76.8rem;
+    margin-top: 3.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+ .subtitle{
+  @include sub-heading($font-primary, 1.4rem, .236rem, $secondary-color)
+ }
+ .main-title{
+  @include heading($font-heading, 2.4rem)
+ }
+}
+
+.bullet-nav{
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 2.6rem;
+  a{
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    color: $primary-color;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px $white-color;
+    border-radius: 50%;
+  }
+  span{
+    @include sub-heading($font-heading, 1.6rem, .1rem, $white-color)
+  }
+  .select-bullet{
+    background-color: $white-color;
+    span{
+      color: $primary-color;
+    }
+  }
+}
+
+
+
+
+@media (min-width: 500px) {
+  body {
+    background-image: url($bg-tech-m);
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-image: url($bg-tech-l);
+  }
+}
