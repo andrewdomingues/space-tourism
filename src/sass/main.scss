@@ -1,5 +1,4 @@
 @import "resources";
-@import "ham-menu";
 
 :root {
   font-size: 62.5%;
@@ -42,6 +41,7 @@ header {
 }
 
 main {
+  margin-top: 10.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

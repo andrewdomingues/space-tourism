@@ -53,3 +53,46 @@ a.menu-select {
 .menu-item {
   border-right: solid 0.7rem transparent;
 }
+
+@media (min-width: 550px){
+  html header{
+    padding: 0;
+  }
+  #logo{
+    margin-left: 2.9rem;
+  }
+  #menu{
+    position: initial;
+    height: 9.6rem;
+    margin: 0;
+    padding: 0 3.8rem;
+    width: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul{
+      display: flex;
+      margin: 0;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      li{
+        a{
+          padding-bottom: 4rem;
+          display: inline;
+          font-size: 1.4rem;
+        }
+      } 
+    }
+    span{
+      display: none;
+    }
+  }
+  .menu-item {
+    border: none;
+    border-bottom: solid 0.3rem transparent;
+  }
+  #ham-menu{
+    display: none;
+  }
+}

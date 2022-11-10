@@ -1,5 +1,5 @@
-@import "resources";
 @import "main";
+@import "ham-menu";
 
 body {
   background-image: url($bg-crew-s);
@@ -22,8 +22,6 @@ main {
 #role{
   opacity: 50%;
 }
-
-
 .slider{
   // background-color: red;
   width: 88px;
