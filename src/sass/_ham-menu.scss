@@ -83,13 +83,14 @@ a.menu-select {
         display: initial;
         font-size: 1.4rem;
         padding: 0;
+        line-height: normal;
         span{
           display: none;
         }
       }
       li::after{
         content: '';
-        background-color: #fff;
+        background-color: $gray-color;
         height: 5px;
         width: 0;
         display: block;
@@ -101,6 +102,7 @@ a.menu-select {
         width: 100%;
       }
       li.menu-active::after{
+        background-color: $white-color;
         width: 100%;
       }
     }
