@@ -3,8 +3,8 @@
 body{
   background-image: url(/assets/destination/background-destination-mobile.jpg);
   #planet-photo{
-    margin-top: 3.2rem;
-    margin-bottom: 2.6rem;
+    margin-top: calc(3.2rem - 1.6rem);
+    margin-bottom: calc(2.6rem - 1.6rem);
     width: 20rem;
   }
 }
@@ -12,10 +12,11 @@ h1#title{
   font-size: 5.6rem;
   line-height: normal;
 }
+
 #paragraph{
   @include border-bottom;
   padding: 0 0 3.2rem;
-  margin: 0 2.4rem;
+  margin: 0 clamp(2.4rem, 2rem + 5vw, 9.8rem);
 }
 .tab-menu{
   display: flex;
@@ -32,8 +33,10 @@ h1#title{
 
 #sub-headings{
   margin: 3.2rem 0 5.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
   .sub-heading-item{
-    margin-bottom: 3.2rem;
     text-align: center;
   }
 }
@@ -45,10 +48,23 @@ h1#title{
   @include sub-heading($font-heading, 2.8rem, normal, $white-color);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   body {
     background-image: url(/assets/destination/background-destination-tablet.jpg);
+    h5{
+      align-self: flex-start;
+      margin-left: 3.8rem;
+    }
   }
+  img#planet-photo{
+    width: 30rem;
+    margin-top: calc(6rem - 1.6rem);
+    margin-bottom: calc(5.3rem - 1.6rem);
+  }
+  #sub-headings{
+    flex-direction: row;
+  }
+
 }
 @media (min-width: 1000px) {
   body {

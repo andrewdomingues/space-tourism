@@ -32,7 +32,6 @@ a.menu-select {
     margin-top: 4rem;
     li {
       list-style: none;
-      margin-bottom: 1rem;
       a {
         padding: 0.5rem;
         display: grid;
@@ -53,46 +52,58 @@ a.menu-select {
 .menu-item {
   border-right: solid 0.7rem transparent;
 }
-
 @media (min-width: 550px){
   html header{
     padding: 0;
-  }
-  #logo{
-    margin-left: 2.9rem;
-  }
-  #menu{
-    position: initial;
-    height: 9.6rem;
-    margin: 0;
-    padding: 0 3.8rem;
-    width: initial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ul{
-      display: flex;
-      margin: 0;
-      gap: 1.5rem;
-      justify-content: center;
-      align-items: center;
-      li{
-        a{
-          padding-bottom: 4rem;
-          display: inline;
-          font-size: 1.4rem;
-        }
-      } 
+    #logo{
+      padding-left: 2.5rem;
     }
-    span{
-      display: none;
-    }
-  }
-  .menu-item {
-    border: none;
-    border-bottom: solid 0.3rem transparent;
   }
   #ham-menu{
     display: none;
+  }
+  .menu-item{
+    border:none;
+  }
+  #menu{
+    position: initial;
+    display: grid;
+    place-items: center;
+    height: 9.6rem;
+    width: initial;
+    padding: 0 4.8rem;
+    ul{
+      margin-top: 0;
+      display: flex;
+      gap: 3.7rem;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      li a{
+        display: initial;
+        font-size: 1.4rem;
+        padding: 0;
+        span{
+          display: none;
+        }
+      }
+      li::after{
+        content: '';
+        background-color: #fff;
+        height: 5px;
+        width: 0;
+        display: block;
+        position: relative;
+        top: 36px;
+        transition: width .3s;
+      }
+      li:hover::after{
+        width: 100%;
+      }
+      li.menu-active::after{
+        width: 100%;
+      }
+    }
+    
   }
 }
