@@ -9,6 +9,7 @@
   box-sizing: border-box;
   color: $white-color;
 }
+
 main {
   #title {
     @include heading($font-heading, 8rem);
@@ -18,7 +19,7 @@ main {
     @include sub-heading($font-primary, 2rem, 2.7px, $white-color);
   }
   p {
-    @include body-text($font-body, 1.5rem, $secondary-color);
+    @include body-text($font-body, 1.5rem, normal, $secondary-color);
     line-height: 2.5rem;
   }
 }
@@ -41,7 +42,6 @@ header {
 }
 
 main {
-  margin-top: 10.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,5 +50,14 @@ main {
   p {
     text-align: center;
     padding: 0 2.4rem;
+  }
+}
+@media (min-width: 550px){
+  main{
+    margin-top: 4rem; 
+    h5.sub-heading{
+      align-self: flex-start;
+      margin-left: 3.8rem;
+    }
   }
 }

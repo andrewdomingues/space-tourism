@@ -2,6 +2,7 @@
 @import 'ham-menu';
 
 main{
+  margin-top: calc(4.8rem - 2.4rem);
   h5{
     color: $secondary-color;
   }
@@ -10,7 +11,6 @@ main{
 #btn-explore {
   @include sub-heading($font-heading, 2rem, 0.125rem, $primary-color);
   margin-top: 7rem;
-  margin-bottom: 6rem;
   background-color: $white-color;
   cursor: pointer;
   height: 15rem;
@@ -31,6 +31,13 @@ main{
 @media (min-width: 550px) {
   body {
     background-image: url($bg-home-m);
+    main{
+      margin-top: calc(10.6rem - 2.4rem);
+      h5{
+        align-self: center;
+        margin: 0;
+      }
+    }
   }
 }
 @media (min-width: 1000px) {
