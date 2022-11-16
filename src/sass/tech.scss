@@ -19,6 +19,9 @@ main{
  .main-title{
   @include heading($font-heading, 2.4rem)
  }
+ .paragraph{
+  margin: 0 clamp(2.4rem, 2rem + 5vw, 9.8rem) 5rem;
+ }
 }
 
 .bullet-nav{
@@ -29,18 +32,22 @@ main{
     display: flex;
     text-decoration: none;
     background-color: transparent;
-    color: $primary-color;
+    color: $gray-color;
     width: 4rem;
     height: 4rem;
     justify-content: center;
     align-items: center;
-    border: solid 2px $white-color;
+    border: solid 2px $opacity-color;
     border-radius: 50%;
+    span{
+      @include sub-heading($font-heading, 1.6rem, .1rem, $white-color)
+    }
   }
-  span{
-    @include sub-heading($font-heading, 1.6rem, .1rem, $white-color)
+  a:hover{
+    border-color: $white-color;
   }
-  .select-bullet{
+  
+  a.select-bullet{
     background-color: $white-color;
     span{
       color: $primary-color;
@@ -50,6 +57,17 @@ main{
 @media (min-width: 550px) {
   body {
     background-image: url($bg-tech-m);
+  }
+  main{
+    .subtitle{
+      font-size: 1.6rem;
+    }
+    .main-title{
+      font-size: 4rem;
+    }
+    .paragraph{
+      font-size: 1.6rem;
+    }
   }
 }
 @media (min-width: 1000px) {

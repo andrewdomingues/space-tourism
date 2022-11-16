@@ -25,9 +25,13 @@ h1#title{
     @include sub-heading($primary-color, 1.5rem, .24rem, $secondary-color);
     text-decoration: none;
     padding: .8rem 0;
+    border-bottom: solid 4px transparent;
+    &:hover{
+      border-color: $gray-color;
+    }
   }
-  .tab-item-select{
-    border-bottom: solid 4px $white-color;
+  a.tab-item.tab-item-select{
+    border-color: $white-color;
   }
 }
 
