@@ -53,7 +53,7 @@ a.menu-select {
   border-right: solid 0.7rem transparent;
 }
 @media (min-width: 550px){
-  html header{
+  body header{
     padding: 0;
     #logo{
       padding-left: 2.5rem;
@@ -107,5 +107,32 @@ a.menu-select {
       }
     }
     
+  }
+}
+@media(min-width:900px){
+  body header{
+    padding-top: 2.5rem;
+  }
+
+  header::after{
+  position: absolute;
+  content: "";
+  right: 685px;
+  z-index: 1;
+  display: block;
+  background-color: $gray-color;
+  height: 1px;
+  width: calc(100% - 824px);
+  }
+  #menu{
+    padding: 0 10rem 0 12rem;
+    ul li a{
+      letter-spacing: .27rem;
+      font-size: 1.6rem;
+      span{
+        font-size: 1.6rem;
+        display: initial;
+      }
+    }
   }
 }
