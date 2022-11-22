@@ -7,6 +7,18 @@ body{
     margin-bottom: calc(2.6rem - 1.6rem);
     width: 20rem;
   }
+  main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    .destination{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
 }
 h1#title{
   font-size: 5.6rem;
@@ -55,7 +67,11 @@ h1#title{
 @media (min-width: 550px) {
   body {
     background-image: url(/assets/destination/background-destination-tablet.jpg);
-
+  }
+  main{
+    .sub-heading{
+      justify-self: start;
+    }
   }
   img#planet-photo{
     width: 30rem;
@@ -70,5 +86,30 @@ h1#title{
 @media (min-width: 900px) {
   body {
     background-image: url(/assets/destination/background-destination-desktop.jpg);
+  }
+  main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    // column-gap: 15rem;
+    padding: 0 10rem;
+    .destination{
+      align-items: flex-start !important;
+      // margin-top: 3rem;  
+      margin-left: 15rem;
+    }
+    #planet-photo{
+      margin-top: 9.7rem;
+      margin-bottom: 0;
+      
+    }
+    #paragraph{
+      text-align: left;
+      margin: 0;
+    }
+    h5.sub-heading{
+      grid-column: 1 / span 3;
+      margin: 0;
+    }
+
   }
 }
