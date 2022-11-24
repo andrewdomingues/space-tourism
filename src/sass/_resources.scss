@@ -54,7 +54,7 @@ $bg-tech-s: "/assets/tech/bg-tech-s.jpg";
   backdrop-filter: blur(4rem);
 }
 @mixin border-bottom {
-  border-bottom: solid 1px $line-break-color
+  border-bottom: solid 1px $line-break-color;
 }
 @keyframes menu-open-animation {
   from {

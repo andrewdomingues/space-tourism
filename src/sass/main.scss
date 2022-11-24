@@ -17,6 +17,9 @@ main {
   }
   h5 {
     @include sub-heading($font-primary, 2rem, 2.7px, $white-color);
+    span{
+      font-weight: 700;
+    }
   }
   p {
     @include body-text($font-body, 1.5rem, normal, $secondary-color);
@@ -52,10 +55,10 @@ main {
     padding: 0 2.4rem;
   }
 }
-@media (min-width: 550px){
-  main{
-    margin-top: 4rem; 
-    h5.sub-heading{
+@media (min-width: 550px) {
+  main {
+    margin-top: 4rem;
+    h5.sub-heading {
       align-self: flex-start;
       margin-left: 3.8rem;
     }

@@ -52,84 +52,83 @@ a.menu-select {
 .menu-item {
   border-right: solid 0.7rem transparent;
 }
-@media (min-width: 550px){
-  body header{
+@media (min-width: 550px) {
+  body header {
     padding: 0;
-    #logo{
+    #logo {
       padding-left: 2.5rem;
     }
   }
-  #ham-menu{
+  #ham-menu {
     display: none;
   }
-  .menu-item{
-    border:none;
+  .menu-item {
+    border: none;
   }
-  #menu{
+  #menu {
     position: initial;
     display: grid;
     place-items: center;
     height: 9.6rem;
     width: initial;
     padding: 0 4.8rem;
-    ul{
+    ul {
       margin-top: 0;
       display: flex;
       gap: 3.7rem;
       height: 100%;
       justify-content: space-between;
       align-items: center;
-      li a{
+      li a {
         display: initial;
         font-size: 1.4rem;
         padding: 0;
         line-height: normal;
-        span{
+        span {
           display: none;
         }
       }
-      li::after{
-        content: '';
+      li::after {
+        content: "";
         background-color: $gray-color;
         height: 5px;
         width: 0;
         display: block;
         position: relative;
         top: 36px;
-        transition: width .3s;
+        transition: width 0.3s;
       }
-      li:hover::after{
+      li:hover::after {
         width: 100%;
       }
-      li.menu-active::after{
+      li.menu-active::after {
         background-color: $white-color;
         width: 100%;
       }
     }
-    
   }
 }
-@media(min-width:900px){
-  body header{
+@media (min-width: 900px) {
+  body header {
     padding-top: 2.5rem;
   }
 
-  header::after{
-  position: absolute;
-  content: "";
-  right: 685px;
-  z-index: 1;
-  display: block;
-  background-color: $gray-color;
-  height: 1px;
-  width: calc(100% - 824px);
+  header::after {
+    position: absolute;
+    content: "";
+    right: 685px;
+    z-index: 1;
+    display: block;
+    background-color: $gray-color;
+    height: 1px;
+    width: calc(100% - 824px);
   }
-  #menu{
+  #menu {
     padding: 0 10rem 0 12rem;
-    ul li a{
-      letter-spacing: .27rem;
+    ul li a {
+      letter-spacing: 0.27rem;
       font-size: 1.6rem;
-      span{
+      span {
         font-size: 1.6rem;
         display: initial;
       }
