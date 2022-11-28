@@ -133,12 +133,13 @@ main {
         text-align: left;
         padding: 0;
       }
-      .img-container {
-        align-self: baseline;
-        margin: 0;
-        #crew-photo {
-          width: 500px;
-        }
+    }
+    .img-container {
+      align-self: flex-end;
+      margin: 0;
+
+      #crew-photo {
+        width: calc(100% - clamp(30rem, 16rem + 50vw, 22.8rem));
       }
     }
     .slider {
