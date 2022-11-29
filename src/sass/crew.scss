@@ -32,7 +32,6 @@ main {
   #crew-photo {
     width: clamp(15rem, 10rem + 50vw, 17.7rem);
   }
-  
   #role {
     @include sub-heading($font-heading, 1.6rem, normal, $white-color);
     opacity: 50%;
@@ -139,7 +138,7 @@ main {
       margin: 0;
 
       #crew-photo {
-        width: calc(100% - clamp(30rem, 16rem + 50vw, 22.8rem));
+        width: 35rem;
       }
     }
     .slider {

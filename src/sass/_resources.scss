@@ -20,6 +20,14 @@ $bg-crew-s: "/assets/crew/bg-crew-s.jpg";
 $bg-tech-l: "/assets/tech/bg-tech-l.jpg";
 $bg-tech-m: "/assets/tech/bg-tech-m.jpg";
 $bg-tech-s: "/assets/tech/bg-tech-s.jpg";
+$tech-launch-vehicle-land: "/assets/tech/launch-vehicle-land.jpg";
+$tech-launch-vehicle-port: "/assets/tech/launch-vehicle-port.jpg";
+
+$spaceport-land: "/assets/tech/spaceport-land.jpg";
+$spaceport-port: "/assets/tech/spaceport-port.jpg";
+
+$space-capsule-land: "/assets/tech/space-capsule-land.jpg";
+$space-capsule-port: "/assets/tech/space-capsule-port.jpg";
 
 @mixin heading($font-family, $font-size) {
   font-family: $font-family;
