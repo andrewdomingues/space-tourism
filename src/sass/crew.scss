@@ -46,7 +46,6 @@ main {
   }
 }
 .slider {
-  // background-color: red;
   width: 88px;
   height: 10px;
   display: flex;
@@ -72,6 +71,9 @@ main {
     }
     .slider {
       grid-area: c;
+      .page-slider:hover{
+        background-color: $opacity-color ;
+      }
     }
     .img-container {
       grid-area: d;
@@ -123,9 +125,12 @@ main {
     h5.sub-heading {
       margin: 0;
     }
+    #name{
+      margin-bottom: 2rem;
+    }
     .about-crew {
       align-items: flex-start;
-      margin-top: 12rem;
+      margin-top: 7rem;
       margin-bottom: 7rem;
       #bio {
         max-width: 44rem;

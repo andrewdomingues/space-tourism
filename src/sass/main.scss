@@ -1,5 +1,4 @@
 @import "resources";
-
 :root {
   font-size: 62.5%;
 }
@@ -58,5 +57,11 @@ main {
       align-self: flex-start;
       margin-left: 3.8rem;
     }
+  }
+}
+@media (min-width: 900px){
+  h5.sub-heading {
+    font-size: 2.8rem;
+    letter-spacing: .47rem;
   }
 }
