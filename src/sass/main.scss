@@ -34,7 +34,7 @@ body {
   background-image: url($bg-home-s);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 header {
   display: flex;
@@ -49,6 +49,12 @@ main {
     text-align: center;
     padding: 0 2.4rem;
   }
+}
+@media only screen and (max-device-width: 480px) {
+    html {
+      height: calc(100% + 60px);
+      min-height: calc(100% + 60px);
+    }
 }
 @media (min-width: 550px) {
   main {
