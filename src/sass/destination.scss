@@ -104,11 +104,9 @@ h1#title {
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    // column-gap: 15rem;
     margin: 3rem 10rem 0;
     .destination {
       align-items: flex-start;
-      // margin-top: 3rem;
       margin-left: 5vw;
     }
     h1#title{
@@ -116,7 +114,6 @@ h1#title {
     }
     img#planet-photo {
       margin-top: 4rem;
-      // margin-bottom: 0;
       width: 30vw;
     }
     #paragraph {
@@ -137,6 +134,5 @@ h1#title {
         text-align: left;
       }
     }
-
   }
 }
