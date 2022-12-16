@@ -1,4 +1,4 @@
-@import "resources";
+@import 'resources';
 :root {
   font-size: 62.5%;
 }
@@ -8,7 +8,6 @@
   box-sizing: border-box;
   color: $white-color;
 }
-
 main {
   #title {
     @include heading($font-heading, 8rem);
@@ -16,7 +15,7 @@ main {
   }
   h5 {
     @include sub-heading($font-primary, 2rem, 2.7px, $white-color);
-    span{
+    span {
       font-weight: 700;
     }
   }
@@ -28,13 +27,11 @@ main {
 h5 span {
   opacity: 25%;
 }
-
 body {
   background-color: $primary-color;
   background-image: url($bg-home-s);
   background-size: cover;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
 }
 header {
   display: flex;
@@ -50,12 +47,6 @@ main {
     padding: 0 2.4rem;
   }
 }
-@media only screen and (max-device-width: 480px) {
-    html {
-      height: calc(100% + 60px);
-      min-height: calc(100% + 60px);
-    }
-}
 @media (min-width: 550px) {
   main {
     margin-top: 4rem;
@@ -65,9 +56,9 @@ main {
     }
   }
 }
-@media (min-width: 900px){
+@media (min-width: 900px) {
   h5.sub-heading {
     font-size: 2.8rem;
-    letter-spacing: .47rem;
+    letter-spacing: 0.47rem;
   }
 }

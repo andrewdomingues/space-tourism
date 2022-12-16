@@ -1,4 +1,4 @@
-@import "resources";
+@import 'resources';
 .hide {
   display: none;
 }
@@ -36,7 +36,7 @@ a.menu-select {
         padding: 0.5rem;
         display: grid;
         grid-template-columns: 4rem;
-        grid-template-areas: "a b";
+        grid-template-areas: 'a b';
         align-content: start;
       }
     }
@@ -89,7 +89,7 @@ a.menu-select {
         }
       }
       li::after {
-        content: "";
+        content: '';
         background-color: $gray-color;
         height: 5px;
         width: 0;
@@ -115,7 +115,7 @@ a.menu-select {
 
   header::after {
     position: absolute;
-    content: "";
+    content: '';
     right: 685px;
     z-index: 1;
     display: block;

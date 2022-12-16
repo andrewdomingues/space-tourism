@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies" : {
+  "devDependencies": {
     "lite-server": "^2.6.1"
   }
 }
